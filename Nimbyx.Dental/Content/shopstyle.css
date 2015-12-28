@@ -76,7 +76,7 @@ input.signup-text{
 
 /* top banner */
 .top-banner {
-    background: url('../images/touchipad2.png') no-repeat;
+    background: url('/Content/images/touchipad2.png') no-repeat;
     background-position: top;
 }
 .top-banner-panel{
@@ -101,7 +101,7 @@ input.signup-text{
     font-weight:bold!important;
 }
 .pay-logo {
-    background: url('../images/nimbyxpay.png') no-repeat;
+    background: url('/Content/images/nimbyxpay.png') no-repeat;
     background-size:150px;
     height: 35px;
 }
@@ -265,13 +265,13 @@ input.signup-text{
 	background: none;	
 }
 .ceo-remarks{
-	background: url('../images/ceo-large-bottom.png') no-repeat bottom right,
-				url('../images/ceo-large-bg.png') repeat-x;
+	background: url('/Content/images/ceo-large-bottom.png') no-repeat bottom right,
+				url('/Content/images/ceo-large-bg.png') repeat-x;
 	min-height: 857px;
 	position: relative;
 }
 .ceo-bubble{
-	background: url('../images/ceo-speech-bubble-box.png') no-repeat;
+	background: url('/Content/images/ceo-speech-bubble-box.png') no-repeat;
 	border: none;
 	height: 270px;
 	padding: 25px;
@@ -290,12 +290,12 @@ input.signup-text{
     height: 20px;	
 }
 .ceo-bubble p span:first-child{
-	background: url('../images/ceo-speech-first.png') no-repeat;
+	background: url('/Content/images/ceo-speech-first.png') no-repeat;
 	float: left;
 	margin: 5px 10px 100px 0px;
 }
 .ceo-bubble p span:last-child{
-	background: url('../images/ceo-speech-last.png') no-repeat;
+	background: url('/Content/images/ceo-speech-last.png') no-repeat;
 	float: right;
 }
 .ceo-bubble h5{
@@ -372,7 +372,7 @@ input.signup-text{
 	font-size: 24px;
 	color: #235c82;
 	list-style: none;
-	list-style-image: url('../images/list-options-sym.png');
+	list-style-image: url('/Content/images/list-options-sym.png');
     float: right;
     width: 270px;
     line-height: 65px;
@@ -520,13 +520,13 @@ h4.mod-banner{
 @media (max-width: 767px) {
 	.container-fluid{padding-left: 0px; padding-right: 0px; width: 95%;}
 	.ceo-container{width: 100%;}
-    .top-banner{background: url('../images/../images/mobile-background.png') no-repeat;  background-size: 100% 90%; padding-top: 100px; background-position: top right; min-height: 300px;font-size:40px; color:#006699;   }
+    .top-banner{background: url('/Content/images/mobile-background.png') no-repeat;  background-size: 100% 90%; padding-top: 100px; background-position: top right; min-height: 300px;font-size:40px; color:#006699;   }
 	.top-banner-panel{ margin-right: 1em;}
 	.round-button{width: 250px;}
 	.round-button a{line-height: 1em;}
 	.ceo-content > h2 > br{display: block;}
 	.ui-links > span > br, .ceo-content h3, .ceo-content p{display: none;}
-	.ceo-remarks{background: url('../images/mb-ceo-large-bottom.jpg') no-repeat; background-position: right; min-height: 825px;}
+	.ceo-remarks{background: url('/Content/images/mb-ceo-large-bottom.jpg') no-repeat; background-position: right; min-height: 825px;}
 	.ceo-bubble{margin-top: -60px; margin-left: 20px; margin-right: 20px;}
 	.ceo-bubble p, .ceo-bubble h5{font-size: 20px;}
 	.ceo-bubble p span:first-child{margin: 5px auto auto 0px;}

@@ -249,6 +249,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\nimbyxdata.mdf" />
+    <Content Include="App_Data\nimbyxdata_log.ldf">
+      <DependentUpon>nimbyxdata.mdf</DependentUpon>
+    </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -273,6 +277,7 @@
     <Content Include="Content\images\mb-top-panel.png" />
     <Content Include="Content\images\modal-be-part-slogan.png" />
     <Content Include="Content\images\modal-close-white-x.png" />
+    <Content Include="Content\images\nimbyxpay.png" />
     <Content Include="Content\images\twitter.png" />
     <Content Include="Content\images\txt-thank-you-bottom.png" />
     <Content Include="Content\images\txt-thank-you.png" />
@@ -334,6 +339,9 @@
     <Content Include="fonts\SourceSansPro-Semibold.eot" />
     <Content Include="fonts\SourceSansPro-Semibold.ttf" />
     <Content Include="fonts\SourceSansPro-Semibold.woff" />
+    <Content Include="Scripts\pay\payController.js" />
+    <Content Include="Scripts\pay\payModule.js" />
+    <Content Include="Scripts\pay\payService.js" />
     <Content Include="Views\Home\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\commonpage.js" />
@@ -366,9 +374,7 @@
     <Content Include="Views\Shop\oldIndex.cshtml" />
     <Content Include="Views\Shared\_Layout - Copy %282%29.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -376,6 +382,15 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Visual Studio 2015\WebSites\Nimbyx.Web.API\Nimbyx.Web.API\Nimbyx.Web.API.csproj">
+      <Project>{224886b2-81f9-4a72-bf1b-5a5d4380888b}</Project>
+      <Name>Nimbyx.Web.API</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
