@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nimbyx.Entities", "..\..\Visual Studio 2015\WebSites\Nimbyx.Entities\Nimbyx.Entities.csproj", "{F66A21DD-3B84-47D9-AD3E-917F7452F417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nimbyx.Web.API", "..\..\Visual Studio 2015\WebSites\Nimbyx.Web.API\Nimbyx.Web.API\Nimbyx.Web.API.csproj", "{224886B2-81F9-4A72-BF1B-5A5D4380888B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nimbyx.Dental.Models", "Nimbyx.Dental.Models\Nimbyx.Dental.Models.csproj", "{7BB4D0E0-9EF0-4BFC-876C-7C43F8EEB503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nimbyx.Dental", "Nimbyx.Dental\Nimbyx.Dental.csproj", "{2AC988C4-9611-465E-B909-5DAEF952CA47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F66A21DD-3B84-47D9-AD3E-917F7452F417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F66A21DD-3B84-47D9-AD3E-917F7452F417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F66A21DD-3B84-47D9-AD3E-917F7452F417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F66A21DD-3B84-47D9-AD3E-917F7452F417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{224886B2-81F9-4A72-BF1B-5A5D4380888B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224886B2-81F9-4A72-BF1B-5A5D4380888B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224886B2-81F9-4A72-BF1B-5A5D4380888B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224886B2-81F9-4A72-BF1B-5A5D4380888B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB4D0E0-9EF0-4BFC-876C-7C43F8EEB503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB4D0E0-9EF0-4BFC-876C-7C43F8EEB503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB4D0E0-9EF0-4BFC-876C-7C43F8EEB503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB4D0E0-9EF0-4BFC-876C-7C43F8EEB503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC988C4-9611-465E-B909-5DAEF952CA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC988C4-9611-465E-B909-5DAEF952CA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC988C4-9611-465E-B909-5DAEF952CA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC988C4-9611-465E-B909-5DAEF952CA47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

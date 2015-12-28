@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="mainnav">
+            @RenderSection("Header", required: false)
+        </header>
+        <div class="row top-banner">
+            <div class="col-sm-6 top-banner-panel">
+                @RenderSection("TopBanner", required: false)
+            </div>
+        </div>
+        <div class="row sign-up-top">
+            <div class="col-md-6 signup">
+                <p>Sign up for our newsletter</p>
+                <form id="subscribebottom">
+                    <div class="input-group signup-box">
+                        <input type="email" class="form-control signup-text" placeholder="Enter your email" name="email" id="email" required>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" id="btn-subscribebottom">SIGN UP</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row quick-links">
+            <h4 class="hidden-xs hidden-sm">nimbyx benefits:</h4>
+            <div class="col-sm-6 col-md-5 ui-links">
+                <div class="round-button">
+                    <div class="round-button-circle btn-gold">
+                        <span class="icon-newspaper-o"></span>
+                        <a href="news/index.html" class="round-button">nimbyx<br>NEWS</a>
+                    </div>
+                </div>
+                <span class="ui-caption">Be Better <br>Informed</span>
+            </div>
+            <div class="col-sm-6 col-md-5 ui-links">
+                <div class="round-button">
+                    <div class="round-button-circle btn-orange">
+                        <span class="icon-credit-card"></span>
+                        <a href="pay/index.html" class="round-button">nimbyx<br>PAY</a>
+                    </div>
+                </div>
+                <span class="ui-caption">Get Paid <br>Faster</span>
+            </div>
+            <div class="col-sm-6 col-md-5 ui-links">
+                <div class="round-button">
+                    <div class="round-button-circle btn-blue">
+                        <span class="icon-bar-chart"></span>
+                        <a href="lab/index.html" class="round-button">nimbyx<br>LAB</a>
+                    </div>
+                </div>
+                <span class="ui-caption">Easy Lab <br>Management</span>
+            </div>
+            <div class="col-sm-6 col-md-5 ui-links">
+                <div class="round-button">
+                    <div class="round-button-circle btn-green">
+                        <span class="icon-shopping-cart"></span>
+                        <a href="shop/index.html" class="round-button">nimbyx<br>SHOP</a>
+                    </div>
+                </div>
+                <span class="ui-caption">Connect With <br>Customers</span>
+            </div>
+        </div>
+        <div class="row ceo-remarks">
+            <div class="container ceo-bubble-container">
+                <div class="col-sm-4 col-md-1 ceo-bubble">
+                    <p>
+                        <img src="/Content/images/ceo-speech-first.png" style="vertical-align: text-top;">
+                        No one should have to rely on yesterday's news to make business decisions today.
+                        <img src="/Content/images/ceo-speech-last.png" style="vertical-align: text-top;">
+                    </p>
+                    <h5>Paolo Kalaw - CEO, nimbyx</h5>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container-fluid ceo-container">
+                <div class="col-xs-12 col-md-6 ceo-content">
+                    <h2>Get in the now.<br> Get in the know.</h2>
+                    <h3>Become part of nimbyx</h3>
+                    <button class="btn btn-default btn-lg" type="button" id="open-form">SIGN UP TODAY</button>
+                    <p>* We promise to never share your information with a third party.</p>
+                </div>
+            </div>
+        </div>
+        
+</div>
+
+
+    <div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-nav-content">
+                <div class="modal-nav-body">
+                    <ul>
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>                        
+                        <li>@Html.ActionLink("nimbyx News", "Index", "Home", new { area = "" })</li>               
+                        <li>@Html.ActionLink("nimbyx Pay", "Index", "Home", new { area = "" })</li>
+                        <li>@Html.ActionLink("nimbyx Lab", "Index", "Home", new { area = "" })</li>
+                        <li>@Html.ActionLink("nimbyx Shop", "Index", "Shop")</li>
+                        <li>@Html.ActionLink("Contact Us", "Index", "Home", new { area = "" })</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Small modal -->
+    <div class="modal fade bs-example-modal-lg" id="subscribe" tabindex="-1" role="dialog"
+         aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <h4 class="mod-banner">
+                        Become part of <span>
+                            <img src="images/logo-nimbyx-single.png"
+                                 style="width: 185px !important;">
+                        </span>
+                    </h4>
+
+                    <p>Get informed and connected in dentistry.</p>
+
+                    <div class="list-container">
+                        <ul>
+                            <li><input type="checkbox" id="pay"><label for="pay">nimbyx PAY</label></li>
+                            <li><input type="checkbox" id="lab"><label for="lab">nimbyx LAB</label></li>
+                            <li><input type="checkbox" id="news"><label for="news">nimbyx NEWS</label></li>
+                            <li><input type="checkbox" id="shop"><label for="shop">nimbyx SHOP</label></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="modal-form">
+                        <form id="subscribemodal">
+                            <div class="input-group signup-box">
+                                <input type="email" class="form-control signup-text" placeholder="Enter your email"
+                                       name="email" id="modalemail" required>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" id="btn-subscribemodal">
+                                        SIGN UP
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="mod-bottom">*We never share your information with a third party.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bs-example-modal-lg" id="thankyou" tabindex="-1" role="dialog"
+         aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-thankyou">
+                        <div class="row">
+                            <img src="http://www.nimbyx.com/images/email/logo-nimbyx.png">
+                        </div>
+                        <div class="row">
+                            <h1>Thank You!</h1>
+                        </div>
+                        <div class="row">
+                            <h3>
+                                You have successfully been added to our subscriber list and will receive any news updates
+                                and more.
+                            </h3>
+
+                            <p>In the meantime, please make sure to follow us on</p>
+                        </div>
+                        <div class="row">
+                            <a href="https://www.facebook.com/nimbyx" target="_blank">
+                                <img class="sm"
+                                     src="http://www.nimbyx.com/images/email/facebook.png">
+                            </a>
+                            <a href="https://twitter.com/nimbyx" target="_blank">
+                                <img class="sm"
+                                     src="http://www.nimbyx.com/images/email/twitter.png">
+                            </a>
+                            <a href="https://www.linkedin.com/company/nimbyx" target="_blank">
+                                <img class="sm"
+                                     src="http://www.nimbyx.com/images/email/linkedin.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <footer>
+        <div class="row footer">
+            <p class="pull-left footer-p">&copy;2015 All Rights Reserved by nimbyx Ltd.</p>
+
+            <div class="pull-right social-media-icons">
+                <a href="https://www.facebook.com/nimbyx" target="_blank"><img width="25px" src="/Content/images/facebook.png"></a>
+                <a href="https://twitter.com/nimbyx" target="_blank"><img width="25px" src="/Content/images/twitter.png"></a>
+                <a href="https://www.linkedin.com/company/nimbyx" target="_blank"><img width="25px" src="/Content/images/linkedin.png"></a>
+            </div>
+            <p class="mob-copy">&copy;2015 All Rights Reserved by nimbyx Ltd.</p>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
