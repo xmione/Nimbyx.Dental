@@ -281,6 +281,7 @@
     <Content Include="Content\images\ui-panel-pay.png" />
     <Content Include="Content\images\ui-panel-shop.png" />
     <Content Include="Content\oldstyle.css" />
+    <Content Include="Content\shopstyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\nimbyx.svg" />
@@ -360,8 +361,10 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\_Layout - Copy.cshtml" />
+    <Content Include="Views\Shared\_ShopLayout.cshtml" />
     <Content Include="Views\Shop\Index.cshtml" />
+    <Content Include="Views\Shop\oldIndex.cshtml" />
+    <Content Include="Views\Shared\_Layout - Copy %282%29.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
