@@ -1,0 +1,8 @@
+C:\Users\Sol\Downloads\nopCommerce_3.70_Source\Tests\Nop.Tests\bin\Debug\Nop.Tests.dll
+C:\Users\Sol\Downloads\nopCommerce_3.70_Source\Tests\Nop.Tests\bin\Debug\Nop.Tests.pdb
+C:\Users\Sol\Downloads\nopCommerce_3.70_Source\Tests\Nop.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Sol\Downloads\nopCommerce_3.70_Source\Tests\Nop.Tests\bin\Debug\Rhino.Mocks.dll
+C:\Users\Sol\Downloads\nopCommerce_3.70_Source\Tests\Nop.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Sol\Downloads\nopCommerce_3.70_Source\Tests\Nop.Tests\bin\Debug\Rhino.Mocks.xml
+C:\Users\Sol\Downloads\nopCommerce_3.70_Source\Tests\Nop.Tests\obj\Debug\Nop.Tests.dll
+C:\Users\Sol\Downloads\nopCommerce_3.70_Source\Tests\Nop.Tests\obj\Debug\Nop.Tests.pdb

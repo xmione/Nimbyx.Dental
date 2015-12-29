@@ -1,0 +1,171 @@
+﻿ 
+    @*@Styles.Render("~/Content/css")*@
+    <link href="~/Content/shopstyle.css" rel="stylesheet" />
+    @*@Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)*@
+
+    <script src="~/Scripts/shop/shopController.js"></script>
+    <script src="~/Scripts/shop/shopService.js"></script>
+ 
+        <div class="container-fluid">
+            <div class="pay-logo"></div>
+            <div class="search-div">
+                <textarea>Painless Product Search</textarea>
+                <button class="btn-default">Search</button>
+            </div>
+            <div class="horizontal-bar"></div>
+            <div class="menu-bar">
+                <ul>
+                    <li>
+                        <a href="">Shop</a>
+                    </li>
+                    <li>
+                        <a href="">Pay</a>
+                    </li>
+                    <li>
+                        <a href="">New Arrivals</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="side-list" data-ng-app="nimbyxModule" data-ng-controller="shopController" data-ng-init="init();">
+                <h4>Browse Products</h4>
+                <ul data-ng-model="products" data-ng-repeat="product in products">
+                    <li data-ng-repeat="(key,val) in product">
+                        <a>{{ val}}</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="container body-content container-separator">
+                @RenderBody()
+            </div>
+        </div>
+
+        <div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-nav-content">
+                    <div class="modal-nav-body">
+                        <ul>
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("nimbyx News", "Index", "Home", new { area = "" })</li>
+                            <li>@Html.ActionLink("nimbyx Pay", "Index", "Home", new { area = "" })</li>
+                            <li>@Html.ActionLink("nimbyx Lab", "Index", "Home", new { area = "" })</li>
+                            <li>@Html.ActionLink("nimbyx Shop", "Index", "Shop")</li>
+                            <li>@Html.ActionLink("Contact Us", "Index", "Home", new { area = "" })</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Small modal -->
+        <div class="modal fade bs-example-modal-lg" id="subscribe" tabindex="-1" role="dialog"
+             aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="mod-banner">
+                            Become part of <span>
+                                <img src="images/logo-nimbyx-single.png"
+                                     style="width: 185px !important;">
+                            </span>
+                        </h4>
+
+                        <p>Get informed and connected in dentistry.</p>
+
+                        <div class="list-container">
+                            <ul>
+                                <li><input type="checkbox" id="pay"><label for="pay">nimbyx PAY</label></li>
+                                <li><input type="checkbox" id="lab"><label for="lab">nimbyx LAB</label></li>
+                                <li><input type="checkbox" id="news"><label for="news">nimbyx NEWS</label></li>
+                                <li><input type="checkbox" id="shop"><label for="shop">nimbyx SHOP</label></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="modal-form">
+                            <form id="subscribemodal">
+                                <div class="input-group signup-box">
+                                    <input type="email" class="form-control signup-text" placeholder="Enter your email"
+                                           name="email" id="modalemail" required>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button" id="btn-subscribemodal">
+                                            SIGN UP
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="clearfix"></div>
+                        <p class="mod-bottom">*We never share your information with a third party.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bs-example-modal-lg" id="thankyou" tabindex="-1" role="dialog"
+             aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container modal-thankyou">
+                            <div class="row">
+                                <img src="http://www.nimbyx.com/images/email/logo-nimbyx.png">
+                            </div>
+                            <div class="row">
+                                <h1>Thank You!</h1>
+                            </div>
+                            <div class="row">
+                                <h3>
+                                    You have successfully been added to our subscriber list and will receive any news updates
+                                    and more.
+                                </h3>
+
+                                <p>In the meantime, please make sure to follow us on</p>
+                            </div>
+                            <div class="row">
+                                <a href="https://www.facebook.com/nimbyx" target="_blank">
+                                    <img class="sm"
+                                         src="http://www.nimbyx.com/images/email/facebook.png">
+                                </a>
+                                <a href="https://twitter.com/nimbyx" target="_blank">
+                                    <img class="sm"
+                                         src="http://www.nimbyx.com/images/email/twitter.png">
+                                </a>
+                                <a href="https://www.linkedin.com/company/nimbyx" target="_blank">
+                                    <img class="sm"
+                                         src="http://www.nimbyx.com/images/email/linkedin.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="row footer">
+                <p class="footer-p">&copy;2015 All Rights Reserved by nimbyx Ltd.</p>
+
+                <div class="pull-right social-media-icons">
+                    <a href="https://www.facebook.com/nimbyx" target="_blank"><img width="25px" src="/Content/images/facebook.png"></a>
+                    <a href="https://twitter.com/nimbyx" target="_blank"><img width="25px" src="/Content/images/twitter.png"></a>
+                    <a href="https://www.linkedin.com/company/nimbyx" target="_blank"><img width="25px" src="/Content/images/linkedin.png"></a>
+                </div>
+                <p class="mob-copy">&copy;2015 All Rights Reserved by nimbyx Ltd.</p>
+            </div>
+        </footer>
+ 
