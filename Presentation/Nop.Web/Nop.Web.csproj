@@ -500,6 +500,7 @@
     <Content Include="Content\Images\ceo-speech-last.png" />
     <Content Include="Content\Images\default-image.png" />
     <Content Include="Content\Images\facebook.png" />
+    <Content Include="Content\Images\getnimbyxpay.png" />
     <Content Include="Content\Images\linkedin.png" />
     <Content Include="Content\Images\logo-nimbyx-single.png" />
     <Content Include="Content\Images\logo-nimbyx.png" />
@@ -510,7 +511,10 @@
     <Content Include="Content\Images\mb-top-panel.png" />
     <Content Include="Content\Images\modal-be-part-slogan.png" />
     <Content Include="Content\Images\modal-close-white-x.png" />
+    <Content Include="Content\Images\nimbyx-logo-white.png" />
+    <Content Include="Content\Images\nimbyx-pay-logo.png" />
     <Content Include="Content\Images\nimbyxpay.png" />
+    <Content Include="Content\Images\touchipad2.png" />
     <Content Include="Content\Images\twitter.png" />
     <Content Include="Content\Images\txt-thank-you-bottom.png" />
     <Content Include="Content\Images\txt-thank-you.png" />
@@ -2145,6 +2149,8 @@
     <Content Include="Themes\PowerHub\Content\styles.css" />
     <Content Include="Themes\PowerHub\Content\styles.rtl.css" />
     <Content Include="Themes\PowerHub\preview.jpg" />
+    <Content Include="Views\Shared\_ColumnsOne.cshtml" />
+    <Content Include="Views\Shared\_ColumnsTwo.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

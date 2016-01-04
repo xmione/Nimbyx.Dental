@@ -2,9 +2,16 @@
     ViewBag.Title = "Home";
     Layout = "~/Views/Shared/_OldLayout.cshtml";
 }
+@section Logo{
+    <img src="~/Content/Images/logo-nimbyx.png">
+}
 
 @section TopBanner{
-    <h2>nimbyx is revolutionary software that enables everyone in dentistry to connect with each other and still maintain confidentiality and privacy of your information.</h2>
-    <h2>Tell us who you want to connect with.<br>We do the rest.</h2>
+    <div class="row top-banner banner-home">
+        <div class="col-sm-6 top-banner-panel">
+            <h2>nimbyx is revolutionary software that enables everyone in dentistry to connect with each other and still maintain confidentiality and privacy of your information.</h2>
+            <h2>Tell us who you want to connect with.<br>We do the rest.</h2>
+        </div>
+    </div>
 }
 
