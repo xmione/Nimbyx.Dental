@@ -1,50 +1,139 @@
-﻿@{
-    Layout = "~/Views/Shared/_Root.cshtml";
-}
-@{
-    //current category ID
-    int currentCategoryId = 0;
-    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("catalog", StringComparison.InvariantCultureIgnoreCase) &&
-        Url.RequestContext.RouteData.Values["action"].ToString().Equals("category", StringComparison.InvariantCultureIgnoreCase))
-    {
-        currentCategoryId = Convert.ToInt32(Url.RequestContext.RouteData.Values["categoryId"].ToString());
-    }
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="~/favicon.png" />
 
+    <title>nimbyx</title>
 
-    //current manufacturer ID
-    int currentManufacturerId = 0;
-    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("catalog", StringComparison.InvariantCultureIgnoreCase) &&
-        Url.RequestContext.RouteData.Values["action"].ToString().Equals("manufacturer", StringComparison.InvariantCultureIgnoreCase))
-    {
-        currentManufacturerId = Convert.ToInt32(Url.RequestContext.RouteData.Values["manufacturerId"].ToString());
-    }
+    <!-- Bootstrap core CSS -->
+    <link href="~/Content/staging/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="~/Content/staging/font-styles.css" rel="stylesheet" />
+    <link href="~/Content/staging/styles.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
+</head>
 
-    //current product ID
-    int currentProductId = 0;
-    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("product", StringComparison.InvariantCultureIgnoreCase) &&
-        Url.RequestContext.RouteData.Values["action"].ToString().Equals("productdetails", StringComparison.InvariantCultureIgnoreCase))
-    {
-        currentProductId = Convert.ToInt32(Url.RequestContext.RouteData.Values["productId"].ToString());
-    }
-}
-
-<div class="container" style="padding-top:20px;">
-    <div class="row">
-        <div class="center-2 col-md-9 col-sm-12 col-xs-12 pull-right">
-            @Html.Widget("main_column_before")
-            @RenderBody()
-            @Html.Widget("main_column_after")
-        </div>
-        <div class="side-2 col-md-3 col-sm-12 col-xs-12">
+<body>
+        <div class="container-fluid">
+            <header class="mainnav">
+                <a class="mainnav_br-logo" href="/">
+                    <img src="~/Content/Images/logo-nimbyx.png">
+                </a>
+                <div class="mainnav_hamburger" tabindex="0" data-toggle="modal" data-target="#nav-modal">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
             <div class="row top-banner">
                 <div class="col-sm-6 top-banner-panel">
                     @RenderSection("TopBanner", required: false)
                 </div>
             </div>
-            <div class="row">
-                @Html.Partial("_OldStyleContent")
+            @Html.Partial("_OldStyleContent")
+            <div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-nav-content">
+                        <div class="modal-nav-body">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="news/">nimbyx News</a></li>
+                                <li><a href="lab/">nimbyx Lab</a></li>
+                                <li><a href="shop/">nimbyx Shop</a></li>
+                                <li><a href="pay/">nimbyx Pay</a></li>
+                                <li><a href="contact-us.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- Small modal -->
+            <div class="modal fade bs-example-modal-lg" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body">
+                            <h4 class="mod-banner">Become part of <span><img src="~/Content/Images/logo-nimbyx-single.png" style="width: 185px !important;"></span></h4>
+                            <p>Get informed and connected in dentistry.</p>
+                            <div class="list-container">
+                                <ul>
+                                    <li><input type="checkbox" id="pay"><label for="pay">nimbyx PAY</label></li>
+                                    <li><input type="checkbox" id="lab"><label for="lab">nimbyx LAB</label></li>
+                                    <li><input type="checkbox" id="news"><label for="news">nimbyx NEWS</label></li>
+                                    <li><input type="checkbox" id="shop"><label for="shop">nimbyx SHOP</label></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="modal-form">
+                                <form id="subscribemodal">
+                                    <div class="input-group signup-box">
+                                        <input type="email" class="form-control signup-text" placeholder="Enter your email" name="email" id="modalemail" required>
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button" id="btn-subscribemodal">SIGN UP</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="clearfix"></div>
+                            <p class="mod-bottom">*We never share your information with a third party.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade bs-example-modal-lg" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container modal-thankyou">
+                                <div class="row">
+                                    <img src="http://www.nimbyx.com/Images/email/logo-nimbyx.png">
+                                </div>
+                                <div class="row">
+                                    <h1>Thank You!</h1>
+                                </div>
+                                <div class="row">
+                                    <h3>You have successfully been added to our subscriber list and will receive any news updates and more.</h3>
+                                    <p>In the meantime, please make sure to follow us on</p>
+                                </div>
+                                <div class="row">
+                                    <a href="https://www.facebook.com/nimbyx" target="_blank"><img class="sm" src="http://www.nimbyx.com/Images/email/facebook.png"></a>
+                                    <a href="https://twitter.com/nimbyx" target="_blank"><img class="sm" src="http://www.nimbyx.com/Images/email/twitter.png"></a>
+                                    <a href="https://www.linkedin.com/company/nimbyx" target="_blank"><img class="sm" src="http://www.nimbyx.com/Images/email/linkedin.png"></a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="~/Scripts/staging/js/jQuery/ie10-viewport-bug-workaround.js"></script>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+            <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+            <script src="~/Scripts/staging/js/bootstrap/bootstrap.min.js"></script>
+            <script src="~/Scripts/oldStaging.js"></script>
         </div>
-    </div>
-</div>
+    </body>

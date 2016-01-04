@@ -1,20 +1,11 @@
 ﻿@{
-    Layout = "~/Views/Shared/_ColumnsOne.cshtml";
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_OldLayout.cshtml";
 }
-<div class="page home-page">
-    <div class="page-body">
-        @Html.Widget("home_page_top")
-        @Html.Action("TopicBlock", "Topic", new { systemName = "HomePageText" })
-        @Html.Widget("home_page_before_categories")
-        @Html.Action("HomepageCategories", "Catalog")
-        @Html.Widget("home_page_before_products")
-        @Html.Action("HomepageProducts", "Product")
-        @Html.Widget("home_page_before_best_sellers")
-        @Html.Action("HomepageBestSellers", "Product")
-        @Html.Widget("home_page_before_news")
-        @Html.Action("HomePageNews", "News")
-        @Html.Widget("home_page_before_poll")
-        @Html.Action("HomePagePolls", "Poll")
-        @Html.Widget("home_page_bottom")
-    </div>
-</div>
+
+@section TopBanner{
+    <h2>nimbyx is revolutionary software that enables everyone in dentistry to connect with each other and still maintain confidentiality and privacy of your information.</h2>
+    <h2>Tell us who you want to connect with.<br>We do the rest.</h2>
+}
+    
+ 

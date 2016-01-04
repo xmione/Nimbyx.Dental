@@ -493,10 +493,16 @@
     <Content Include="Content\files\ExportImport\Index.htm" />
     <Content Include="Content\files\Index.htm" />
     <Content Include="Content\Images\bg-top-panel.jpg" />
+    <Content Include="Content\Images\ceo-large-bg.png" />
     <Content Include="Content\Images\ceo-large-bottom.png" />
+    <Content Include="Content\Images\ceo-speech-bubble-box.png" />
     <Content Include="Content\Images\ceo-speech-first.png" />
     <Content Include="Content\Images\ceo-speech-last.png" />
     <Content Include="Content\Images\default-image.png" />
+    <Content Include="Content\Images\facebook.png" />
+    <Content Include="Content\Images\linkedin.png" />
+    <Content Include="Content\Images\logo-nimbyx-single.png" />
+    <Content Include="Content\Images\logo-nimbyx.png" />
     <Content Include="Content\Images\mb-ceo-large-bg.jpg" />
     <Content Include="Content\Images\mb-ceo-large-bottom.jpg" />
     <Content Include="Content\Images\mb-menu-ticker.png" />
@@ -1027,6 +1033,19 @@
     <Content Include="Content\samples\product_TabletCover.jpeg" />
     <Content Include="Content\samples\product_Windows8.jpeg" />
     <Content Include="Content\samples\product_WomenTShirt.jpg" />
+    <Content Include="Content\staging\bootstrap\bootstrap-theme.css" />
+    <Content Include="Content\staging\bootstrap\bootstrap-theme.min.css" />
+    <Content Include="Content\staging\bootstrap\bootstrap.css" />
+    <Content Include="Content\staging\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\staging\font-styles.css" />
+    <Content Include="Content\staging\nav.css" />
+    <Content Include="Content\staging\styles-v2.css" />
+    <Content Include="Content\staging\styles.css" />
+    <Content Include="Scripts\oldStaging.js" />
+    <Content Include="Scripts\staging\js\bootstrap\bootstrap.js" />
+    <Content Include="Scripts\staging\js\bootstrap\bootstrap.min.js" />
+    <Content Include="Scripts\staging\js\jQuery\ie10-viewport-bug-workaround.js" />
+    <Content Include="Scripts\staging\js\jQuery\npm.js" />
     <Content Include="Themes\PowerHub\Content\css\oldstyle.css" />
     <Content Include="Themes\PowerHub\Content\css\shopstyle.css" />
     <Content Include="Content\tinymce\license.txt" />
@@ -1201,6 +1220,8 @@
     <Content Include="fonts\SourceSansPro-Semibold.eot" />
     <Content Include="fonts\SourceSansPro-Semibold.ttf" />
     <Content Include="fonts\SourceSansPro-Semibold.woff" />
+    <Content Include="Content\staging\bootstrap\bootstrap-theme.css.map" />
+    <Content Include="Content\staging\bootstrap\bootstrap.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\fineuploader\iframe.xss.response-4.2.2.js" />
     <Content Include="Scripts\fineuploader\jquery.fineuploader-4.2.2.js" />
@@ -2434,8 +2455,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\Head.cshtml" />
-    <Content Include="Views\Shared\_ColumnsOne.cshtml" />
-    <Content Include="Views\Shared\_ColumnsTwo.cshtml" />
     <Content Include="Views\Shared\_Root.cshtml" />
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
@@ -2618,7 +2637,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>15536</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:15535/</IISUrl>
+          <IISUrl>http://localhost:15533/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

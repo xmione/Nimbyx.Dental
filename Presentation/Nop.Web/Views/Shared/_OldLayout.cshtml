@@ -1,49 +1,255 @@
-﻿@{
-    Layout = "~/Views/Shared/_Root.cshtml";
-}
-@{
-    //current category ID
-    int currentCategoryId = 0;
-    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("catalog", StringComparison.InvariantCultureIgnoreCase) &&
-        Url.RequestContext.RouteData.Values["action"].ToString().Equals("category", StringComparison.InvariantCultureIgnoreCase))
-    {
-        currentCategoryId = Convert.ToInt32(Url.RequestContext.RouteData.Values["categoryId"].ToString());
-    }
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="~/favicon.png" />
 
+    <title>nimbyx</title>
 
-    //current manufacturer ID
-    int currentManufacturerId = 0;
-    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("catalog", StringComparison.InvariantCultureIgnoreCase) &&
-        Url.RequestContext.RouteData.Values["action"].ToString().Equals("manufacturer", StringComparison.InvariantCultureIgnoreCase))
-    {
-        currentManufacturerId = Convert.ToInt32(Url.RequestContext.RouteData.Values["manufacturerId"].ToString());
-    }
+    <!-- Bootstrap core CSS -->
+    <link href="~/Content/staging/css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="~/Content/staging/css/font-styles.css" rel="stylesheet">
+    <link href="~styles.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    //current product ID
-    int currentProductId = 0;
-    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("product", StringComparison.InvariantCultureIgnoreCase) &&
-        Url.RequestContext.RouteData.Values["action"].ToString().Equals("productdetails", StringComparison.InvariantCultureIgnoreCase))
-    {
-        currentProductId = Convert.ToInt32(Url.RequestContext.RouteData.Values["productId"].ToString());
-    }
-}
-<div class="container" style="padding-top:20px;">
-	<div class="row">
-		<div class="center-2 col-md-9 col-sm-12 col-xs-12 pull-right">
-			@Html.Widget("main_column_before")
-			@RenderBody()
-			@Html.Widget("main_column_after")
-		</div>
-		<div class="side-2 col-md-3 col-sm-12 col-xs-12">
-            <div class="row top-banner">
-                <div class="col-sm-6 top-banner-panel">
-                    @RenderSection("TopBanner", required: false)
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="mainnav">
+            <a class="mainnav_br-logo" href="/">
+                <img src="~/Content/images/logo-nimbyx.png">
+            </a>
+            <div class="mainnav_hamburger" tabindex="0" data-toggle="modal" data-target="#nav-modal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+
+        <div class="row top-banner">
+            <div class="col-sm-6 top-banner-panel">
+                @RenderSection("TopBanner", required: false)
+            </div>
+        </div>
+        <div class="row">
+            @Html.Partial("_OldStyleContent")
+        </div>
+
+        <div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-nav-content">
+                    <div class="modal-nav-body">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="news/index.html">nimbyx News</a></li>
+                            <li><a href="lab/index.html">nimbyx Lab</a></li>
+                            <li><a href="shop/index.html">nimbyx Shop</a></li>
+                            <li><a href="pay/index.html">nimbyx Pay</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-			<div class="row">
-				 @Html.Partial("_OldStyleContent")
-			</div>
-		</div>
-	</div>
-</div>
+        </div>
+
+        <!-- Small modal -->
+        <div class="modal fade bs-example-modal-lg" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="mod-banner">Become part of <span><img src="images/logo-nimbyx-single.png" style="width: 185px !important;"></span></h4>
+                        <p>Get informed and connected in dentistry.</p>
+                        <div class="list-container">
+                            <ul>
+                                <li><input type="checkbox" id="pay"><label for="pay">nimbyx PAY</label></li>
+                                <li><input type="checkbox" id="lab"><label for="lab">nimbyx LAB</label></li>
+                                <li><input type="checkbox" id="news"><label for="news">nimbyx NEWS</label></li>
+                                <li><input type="checkbox" id="shop"><label for="shop">nimbyx SHOP</label></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="modal-form">
+                            <form id="subscribemodal">
+                                <div class="input-group signup-box">
+                                    <input type="email" class="form-control signup-text" placeholder="Enter your email" name="email" id="modalemail" required>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button" id="btn-subscribemodal">SIGN UP</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="clearfix"></div>
+                        <p class="mod-bottom">*We never share your information with a third party.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bs-example-modal-lg" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container modal-thankyou">
+                            <div class="row">
+                                <img src="http://www.nimbyx.com/images/email/logo-nimbyx.png">
+                            </div>
+                            <div class="row">
+                                <h1>Thank You!</h1>
+                            </div>
+                            <div class="row">
+                                <h3>You have successfully been added to our subscriber list and will receive any news updates and more.</h3>
+                                <p>In the meantime, please make sure to follow us on</p>
+                            </div>
+                            <div class="row">
+                                <a href="https://www.facebook.com/nimbyx" target="_blank"><img class="sm" src="http://www.nimbyx.com/images/email/facebook.png"></a>
+                                <a href="https://twitter.com/nimbyx" target="_blank"><img class="sm" src="http://www.nimbyx.com/images/email/twitter.png"></a>
+                                <a href="https://www.linkedin.com/company/nimbyx" target="_blank"><img class="sm" src="http://www.nimbyx.com/images/email/linkedin.png"></a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="js/jQuery/ie10-viewport-bug-workaround.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $.atp = {};
+            $.atpfrm = {};
+            $.atpfrm.xhr = false;
+            $.atpfrm.request = function ( _type, _url, _data, _beforeSend, _success ) {
+                if ( $.atpfrm.xhr != false ) {
+                    $.atpfrm.xhr.abort();
+                }
+                $.atpfrm.xhr = $.ajax( {
+                    type: _type,
+                    url: _url,
+                    data: _data,
+                    beforeSend: function(){},
+                    success: function ( data ) {
+                        $.atpfrm.xhr = false;
+                        _success( data );
+                    }
+                });
+            }
+            function validatebottom(e){
+                var email = document.getElementById('email').value;
+                var emailtest = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailtest.test(email);
+            }
+            function validatemodal(e){
+                var email = document.getElementById('modalemail').value;
+                var emailtest = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailtest.test(email);
+            }
+
+            $(document).ready( function () {
+                $('.modal-backdrop, #nav-modal, .mainnav_hamburger').click(function(){
+                    if ( $('.mainnav_hamburger').hasClass("nav-open") ) {
+                        $('.mainnav_hamburger').removeClass('nav-open');
+                        $('.mainnav_br-logo > img').attr("src", "images/logo-nimbyx.png");
+                        $('.mainnav').css('background', 'rgba(255,255,255,' + 0.8 + ')');
+                    }else{
+                        $('.mainnav_hamburger').addClass('nav-open');
+                        $('.mainnav_br-logo > img').attr("src", "images/logo-nimbyx-white.png");
+                        $('.mainnav').css('background', 'rgba(255,255,255,' + 0 + ')');
+                    }
+                });
+                var scroll_transparency = false;
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() == 0) {
+                        scroll_transparency = false;
+                        // $('.mainnav').fadeTo( "fast", 1 );
+                        $('.mainnav').css('background', 'rgba(255,255,255,' + 0 + ')');
+                    }else{
+                        if (scroll_transparency == false){
+                            // $('.mainnav').fadeTo( "fast", .5 );
+                            $('.mainnav').css('background', 'rgba(255,255,255,' + 0.8 + ')');
+                            scroll_transparency = true;
+                        }
+                    }
+                });
+
+                $('#email').val = "";
+
+                $('#open-form').click(function(){
+                    $('.modal').css('z-index', 9999);
+                    $('#subscribe').modal('show');
+                });
+                $('#subscribe').on('hidden.bs.modal', function () {
+                    $('.mainnav_hamburger').removeClass('nav-open');
+                    $('.mainnav_br-logo > img').attr("src", "images/logo-nimbyx.png");
+                    $('.mainnav').css('background', 'rgba(255,255,255,' + 0.8 + ')');
+                });
+                $('#subscribe').on('shown.bs.modal', function () {
+                    $('.mainnav').css('background', 'rgba(255,255,255,' + 0 + ')');
+                });
+                $('#thankyou').on('hidden.bs.modal', function () {
+                    $('.mainnav_hamburger').removeClass('nav-open');
+                    $('.mainnav_br-logo > img').attr("src", "images/logo-nimbyx.png");
+                    $('.mainnav').css('background', 'rgba(255,255,255,' + 0.8 + ')');
+                });
+                $('#thankyou').on('shown.bs.modal', function () {
+                    $('.mainnav').css('background', 'rgba(255,255,255,' + 0 + ')');
+                    $('.modal').css('z-index', 9999);
+                });
+
+                $('#btn-subscribemodal').click(function(){
+                    if(validatemodal()){
+                        $.atpfrm.request(
+                        'POST',
+                        'php/sendnewsreply.php',
+                        $('#subscribemodal').serialize(),
+                        function () { console.log('processing');},
+                        function (retval) {
+                            $('.modal').modal('hide');
+                            $('#thankyou').modal('show');
+                            $('#open-form').hide();
+                            $('#subscribebottom').hide();
+                        });
+                    }
+                });
+                $('#btn-subscribebottom').click(function(){
+                    if(validatebottom()){
+                        $.atpfrm.request(
+                        'POST',
+                        'php/sendnewsreply.php',
+                        $('#subscribebottom').serialize(),
+                        function () { console.log('processing');},
+                        function (retval) {
+                            $('#thankyou').modal('show');
+                            $('#subscribebottom').hide();
+                            $('#open-form').hide();
+                        });
+                    }
+                });
+            });
+        </script>
+    </div>
+</body>
