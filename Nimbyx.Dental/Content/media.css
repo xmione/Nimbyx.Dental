@@ -1,0 +1,582 @@
+/* TABLET LANDSCAPE */
+/* Apple iPad 1024x768 */
+@media screen and (max-width: 1024px) {
+
+    /* TOP BANNER */
+    #top_banner {
+        background-position: -101px -104px;
+        background-size: 126%;
+        height: 300px;
+    }
+
+    #top_banner .description {
+        margin: 135px 0 0 50px;
+    }
+
+    #top_banner .description_1 {
+        font-size: 40px;
+    }
+
+    #top_banner .description_2 {
+        font-size: 17px;
+        font-family: 'SourceSansPro-Regular';
+    }
+
+    #top_banner .description_3 {
+        font-size: 17px;
+    }
+
+    /* WHITE CONTAINER */
+    #white_container #logo_holder {
+        max-width: 200px;
+    }
+
+    /* IMAGE CONTAINER */
+    .image_container {
+        width: 430px;
+        background-size: 52%;
+        height: 287px;
+    }
+
+    .message_bubble {
+        margin-top: 10px;
+    }
+
+    .message_bubble p:nth-child(2) {
+        font-size: 13px;
+    }
+
+    .message_bubble p:nth-child(1) {
+        font-size: 16px;
+    }
+
+    /* SIGNUP TODAY */
+    .signup_today {
+        vertical-align: 27px;
+    }
+
+    .signup_today .description_1 {
+        font-size: 27px;
+    }
+
+    .signup_today .description_2 {
+        font-size: 22px;
+    }
+
+    .singup_button {
+        display: none;
+    }
+
+    /* ELEMENTS THAT APPEAR BASE ON CONDITIONS */
+    /* TABLET SIGNUP */
+    .tablet_signup {
+        display: block;
+    }
+
+    .tablet_signup .btn-singup {
+        border-radius: 0px;
+        height: 50px;
+        font-size: 19px;
+    }
+
+    .small_blue_row div {
+        padding: 0px;
+    }
+
+    .small_blue_row div:nth-child(2) {
+        display: none;
+    }
+
+    /* HAMBURGER */
+    #hamburger {
+        margin: 40px 63px 0 0;
+    }
+
+    /* CIRCLE SOCIAL */
+    .circle-social {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+/* MOBILE LANDSCAPE */
+/* Custom 980x1526 */
+@media screen and (max-width: 980px) {
+
+    /* TOP BANNER */
+    #top_banner {
+        height: 350px;
+        background-position: -3px -48px;
+        background-size: 102%;
+    }
+
+    #top_banner .description_1 {
+        font-size: 25px;
+    }
+
+    #top_banner .description_2 {
+        font-size: 14px;
+    }
+
+    #top_banner .description_3 {
+        font-size: 15px;
+    }
+
+    /* SIGNUP FORM */
+    .signup_form {
+        display: block;
+        float: none;
+    }
+
+    .signup_form .btn_signup_group_email,
+    .signup_form .btn_signup_group {
+        border-radius: 5px !important;
+    }
+
+    .signup_form .btn_signup_group_email {
+        margin-bottom: 10px;
+    }
+
+    .signup_form .btn_signup_group {
+        width: 100%;
+    }
+
+    .signup_container .description {
+        width: 400px;
+        margin: 0 auto;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .signup_container .description span:nth-child(1) {
+        font-size: 24px;
+    }
+
+    .signup_container .description span:nth-child(2) {
+        display: block;
+        font-family: 'SourceSansPro-ExtraLight';
+        font-weight: lighter;
+        font-size: 22px;
+    }
+
+    /* CIRCLE CONTAINER */
+    .circle_container {
+        display: none;
+    }
+
+    .circle_second_set {
+        display: block;
+    }
+
+    /* CIRCLE CONTAINER LIST */
+    .circle_container_list {
+        width: 730px;
+        margin: 0 auto;
+    }
+
+    .circle_container_list ul {
+        display: inline-block;
+    }
+
+    .circle_container_list ul li {
+        list-style: none;
+        width: 310px;
+        margin: 15px 0 15px 0;
+    }
+
+    .circle_container_list ul li > div {
+        display: inline-block;
+    }
+
+    .circle_container_list .circle {
+        height: 85px;
+        width: 85px;
+    }
+
+    .circle_container_list .circle .text_holder {
+        font-size: 34px;
+        line-height: 14px;
+    }
+
+    .circle_container_list .circle.circle_1 .text_holder {
+        color: #cebc3b;
+    }
+
+    .circle_container_list .circle.circle_3 .text_holder {
+        color: #24add7;
+    }
+
+    .circle_container_list .circle.circle_2 .text_holder {
+        color: #ca5e16;
+    }
+
+    .circle_container_list .circle.circle_4 .text_holder {
+        color: #43a831;
+    }
+
+    .circle_container_list .circle_description {
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    .circle_container_list .upper_text span {
+        font-family: 'SourceSansPro-Semibold';
+        font-size: 22px;
+    }
+
+    .circle_container_list .upper_text span:nth-child(1),
+    .circle_container_list .lower_text span {
+        color: #006699;
+    }
+
+    .circle_container_list .lower_text span {
+        font-family: 'SourceSansPro-Regular';
+        font-size: 14px;
+    }
+
+    /* SIGNUP TODAY */
+    .signup_today {
+        margin-left: -67px;
+    }
+
+    .message_bubble p:nth-child(1) {
+        font-size: 18px;
+    }
+
+    .message_bubble p:nth-child(2) {
+        font-size: 14px;
+    }
+
+    .message_bubble {
+        margin-top: 30px;
+    }
+
+    .image_container {
+        background-size: 60%;
+        height: 395px;
+        background-position: -21px 34px;
+        margin: 0px;
+        width: 472px;
+    }
+
+        /*  */
+    .ceo_container{padding: 0;}
+}
+
+/* TABLET PORTRAIT */
+/* Custom 768x1024 */
+@media screen and (max-width: 768px) {
+
+    /* TOP BANNER */
+    #top_banner {
+        background-position: -87px -53px;
+        background-size: 132%;
+    }
+
+    /* SIGNUP FORM */
+    .signup_today .description_1 {
+        font-size: 22px;
+    }
+
+    .signup_today .description_2 {
+        font-size: 21px;
+    }
+
+    .signup_today {
+        margin-left: -163px;
+    }
+
+    /* HAMBURGER */
+    #hamburger {
+        margin: 40px 45px 0 0;
+    }
+}
+
+/* TABLET PORTRAIT */
+/* Custom 640x1024 */
+@media screen and (min-width: 701px) and (max-width: 735px) {
+
+    /* CIRCLE CONTAINER */
+    .circle_container_list {
+        width: 677px;
+    }
+
+    .circle_container_list ul li {
+        width: 285px;
+    }
+}
+
+/* TABLET PORTRAIT */
+/* Custom 640x1024 */
+@media screen and (max-width: 700px) {
+
+    /* CIRCLE CONTAINER */
+    .circle_container_list {
+        width: 380px;
+        padding-top: 20px;
+    }
+
+    .circle_container_list ul:nth-child(2) {
+        margin-top: -25px;
+    }
+
+    /* TOP BANNER */
+    #top_banner {
+        height: 345px;
+        background-position: -200px -69px;
+        background-size: 167%;
+    }
+
+    #top_banner .description_1 {
+        font-size: 14px;
+        width: 85%;
+    }
+
+    #top_banner .description_2 {
+        font-size: 12px;
+        width: 53%;
+    }
+
+     #top_banner .description_3 {
+        font-size: 12px;
+        width: 65%;
+    }
+
+    /* SIGNUP TODAY */
+    .signup_today {
+        width: 33%;
+    }
+
+    /* FOOTER */
+    .footer_type_1 {
+        display: none;
+    }
+
+    .footer_type_2 {
+        display: block;
+    }
+
+    .footer_type_2 .circle-social-container,
+    .footer_type_2 .copyright {
+        text-align: center;
+    }
+
+    .footer_type_2 .copyright {
+        margin: 30px 0 0 0 !important;
+    }
+}
+
+/* SCREEN TRACKER */
+/* Between 1025 and 1131 */
+@media screen and (min-width: 1025px) and (max-width: 1131px) {
+
+    /* TOP BANNER */
+    #top_banner {
+        background-position: 10% 100%;
+    }
+
+    /* SIGNUP FORM */
+    .signup_today .description_1 {
+        font-size: 27px;
+    }
+}
+
+/* Between 980 - 768 */
+@media screen and (min-width: 769px) and (max-width: 979px) {
+    /* TOP BANNER */
+    #top_banner {
+        background-position: bottom right;
+        background-size: cover;
+    }
+
+    /* SIGNUP FORM */
+    .signup_today .description_1 {
+        font-size: 22px;
+    }
+
+    .signup_today .description_2 {
+        font-size: 21px;
+    }
+
+    .signup_today {
+        margin-left: -163px;
+    }
+
+    /* HAMBURGER */
+    #hamburger {
+        margin: 40px 45px 0 0;
+    }
+}
+
+/* Between 640px and below */
+@media screen and (max-width: 767px) {
+
+    /* TOP BANNER */
+    #top_banner {
+        background-position: bottom;
+        background-size: cover;
+    }
+}
+
+/* Between 640px and 496 */
+@media screen and (max-width: 640px) {
+    .signup_container {
+        width: 415px;
+    }
+}
+
+/* Between 495 and 491 */
+@media screen and (max-width: 495px) {
+
+    /* SIGNUP TODAY */
+    .signup_today .description_1 {
+        font-size: 15px;
+    }
+
+    .signup_today {
+        width: 33%;
+    }
+
+    .signup_today .description_2 {
+        font-size: 15px;
+    }
+
+}
+
+/* Between 495 and 421 */
+@media screen and (max-width: 490px) {
+
+    /* IMAGE CONTAINER */
+    .image_container {
+        width: 384px;
+        height: 327px;
+    }
+}
+
+/* Between 420 and 321 */
+@media screen and (max-width: 420px) {
+
+    /* IMAGE CONTAINER */
+    .image_container {
+        width: 384px;
+        height: 327px;
+    }
+
+    /* SIGNUP FORM */
+    .signup_container {
+        width: 320px;
+    }
+
+    .signup_container .description {
+        width: 100%;
+    }
+
+    .signup_container .signup_form {
+        width: 100%;
+    }
+
+    .signup_container .description span:nth-child(1) {
+        font-size: 19px;
+    }
+
+    .signup_container .description span:nth-child(2) {
+        font-size: 19px;
+    }
+}
+
+/* Between 393 and 321 */
+@media screen and (max-width: 393px) {
+
+    /* CIRCLE CONTAINER */
+    .circle_container_list ul li {
+        width: 273px;
+    }
+
+    .circle_container_list {
+        width: 317px;
+    }
+
+    .circle_container_list ul {
+        padding-left: 17px;
+    }
+
+    /* SIGNUP CONTAINER */
+    .signup_container {
+        width: 315px;
+    }
+
+    /* WHITE CONTAINER */
+    #white_container #logo_holder {
+        max-width: 120px;
+    }
+
+    /* IMAGE CONTAINER */
+    .image_container {
+        width: 310px;
+        height: 269px;
+    }
+
+    .message_bubble {
+        width: 177px;
+        right: 0px;
+        float: right;
+    }
+
+    .message_bubble p:nth-child(1) {
+        font-size: 14px;
+    }
+
+    .signup_today {
+        width: 37%;
+        margin-left: -124px;
+    }
+
+    .signup_today .description_1 {
+        font-size: 14px;
+    }
+
+    .signup_today .description_2 {
+        font-size: 13px;
+    }
+
+    .message_bubble p:nth-child(2) {
+        font-size: 11px;
+    }
+}
+
+/* Between 320 and below */
+@media screen and (max-width: 320px) {
+    /* IMAGE CONTAINER */
+    .image_container {
+        width: 268px;
+        height: 238px;
+    }
+
+    .message_bubble {
+        width: 145px;
+        right: 0px;
+        float: right;
+    }
+
+    .message_bubble p:nth-child(1) {
+        font-size: 12px;
+    }
+
+    .signup_today {
+        width: 43%;
+        margin-left: -117px;
+    }
+
+    .signup_today .description_1 {
+        font-size: 13px;
+    }
+
+    .signup_today .description_2 {
+        font-size: 12px;
+    }
+
+    .message_bubble p:nth-child(2) {
+        font-size: 10px;
+    }
+}
+

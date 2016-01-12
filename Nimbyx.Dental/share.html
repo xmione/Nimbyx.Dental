@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+        <title>Share</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/font-styles.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 logo-share-container" >
+                    <a href="index.html"><img style="width:240px;height:85px"src="images/newlogo-connect_grow_03.png"></a>
+                </div>    
+            </div>
+            <div class="row">
+                <div class="col-md-6 share-header">
+                    <h3>Invite others to join nimbyx with your personal link:</h3>
+                </div>
+                <div class="col-md-6 form-group link-holder">
+                    <input class="form-control input-lg" id="link" name="link" placeholder="Your Name" value="http://www.nimbyx.com/?r=0cd6ea">
+                </div>
+                <div class="col-md-6 share-list-sml">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.nimbyx.com/?r=0cd6ea" target="_blank" id="share-facebook-small"><img src="images/facebook.png"></a>
+                    <a href="https://twitter.com/home?status=http%3A//www.nimbyx.com/?r=0cd6ea" target="_blank" id="share-twitter-small"><img src="images/twitter.png" ></a>
+                    <a href="https://www.linkedin.com/cws/share?url=http%3A//www.nimbyx.com/?r=0cd6ea" target="_blank" id="share-linkedin-small"><img src="images/linkedin.png" ></a>
+                </div>                
+                <div class="col-md-6 share-list">
+                    <ul>
+                        <li class="email"><a href="#" id="emailContact"><span><img src="images/email-share-icon.png"></span>Email a contact</a>
+                        <div class="emailContainer">
+                            <form id="shareMobileForm">
+                                <div class="col-md-6 form-group">
+                                    <input class="form-control input-lg" id="namemobile" name="name" placeholder="Your Name">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="email" class="form-control input-lg" id="emailmobile" name="email" placeholder="Your Email">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <textarea class="form-control input-lg" rows="3" placeholder="Your Message" name="message" id="message"></textarea>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="email" class="form-control input-lg" id="emails" name="emails" placeholder="Separate multiple emails with commas">
+                                </div>                        
+                                <div class="col-md-12 form-group">
+                                    <button class="btn btn-default btn-lg" type="button" id="send-mobile-form">SEND MY FRIENDS THE INVITE</button>
+                                </div>
+                            </form>
+                        </div>
+                        </li>
+                        <!--<li class="text"><span><img src="images/text-share-icon.png"></span>Send a text</li> -->
+                        <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.nimbyx.com/?r=0cd6ea" id="share-facebook" target="_blank"><span><img src="images/fb-share-icon.png"></span>Share by facebook</a></li>
+                        <li class="twitter"><a href="https://twitter.com/home?status=http%3A//www.nimbyx.com/?r=0cd6ea" target="_blank" id="share-twitter"><span><img src="images/twitter-share-icon.png"></span>Share by Twitter</a></li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/cws/share?url=http%3A//www.nimbyx.com/?r=0cd6ea" id="share-linkedin" target="_blank"><span><img src="images/linkedin-share-icon.png"></span>Share by linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 thoughts">
+                    <h4>Send your thoughts to<br> <a href="mailto:feedback@nimbyx.com">feedback@nimbyx.com</a></h4>
+                </div>
+            </div>            
+            <div class="row share-contact-form">
+                <div class="share-contact-form-container">
+                    <form id="shareForm">
+                        <div class="col-md-6 form-group">
+                            <input class="form-control input-lg" id="name" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="email" class="form-control input-lg" id="email" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <textarea class="form-control input-lg" rows="3" placeholder="Your Message" name="message" id="message"></textarea>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="email" class="form-control input-lg" id="emails" name="emails" placeholder="Your friends' email addresses - Separate multiple emails with commas">
+                        </div>                        
+                        <div class="col-md-12 form-group">
+                            <button class="btn btn-default btn-lg" type="button" id="send-share-form">SEND MY FRIENDS THE INVITE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row footer">
+                <p class="pull-left footer-p">&copy;2015 All Rights Reserved by nimbyx Ltd.</p>
+                <p class="mob-copy">&copy;2015 All Rights Reserved by nimbyx Ltd.</p>
+            </div>          
+        </div>
+    
+        <div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-nav-content">
+                    <div class="modal-nav-body">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="news/index.html">nimbyx News</a></li>
+                            <li><a href="rewards/index.html">nimbyx Rewards</a></li>
+                            <li><a href="shop/index.html">nimbyx Shop</a></li>
+                            <li><a href="lab/index.html">nimbyx Lab</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bs-example-modal-lg" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>              
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>          
+                    <div class="modal-body">
+                        <div class="container modal-thankyou">
+                            <div class="row">
+                                <img src="images/logo-nimbyx.png">
+                            </div>
+                            <div class="row">
+                                <h1>Thank You!</h1>
+                            </div>
+                            <div class="row">
+                                <h3>You have successfully been added to our subscriber list and will receive any news updates and more.</h3>
+                                <p>In the meantime, please make sure to follow us on</p>
+                            </div>
+                            <div class="row">
+                                <a href="https://www.facebook.com/nimbyx" target="_blank"><img class="sm" src="images/facebook.png"></a>
+                                <a href="https://twitter.com/nimbyx" target="_blank"><img class="sm" src="images/twitter.png"></a>
+                                <a href="https://www.linkedin.com/company/nimbyx" target="_blank"><img class="sm" src="images/linkedin.png"></a>                                
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>            
+                    </div>
+                </div>
+            </div>
+        </div>          
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="js/jQuery/ie10-viewport-bug-workaround.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>    
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        $.atp = {};
+        $.atpfrm = {};
+        $.atpfrm.xhr = false;
+        $.atpfrm.request = function ( _type, _url, _data, _beforeSend, _success ) {
+            if ( $.atpfrm.xhr != false ) {
+                $.atpfrm.xhr.abort();
+            }
+            $.atpfrm.xhr = $.ajax( {
+                type: _type,
+                url: _url,
+                data: _data,
+                beforeSend: function(){},
+                success: function ( data ) {
+                $.atpfrm.xhr = false;
+                    _success( data );
+                }
+            });
+        }        
+        function validatecontactform(e){
+            var email = document.getElementById('email').value;
+            var emailtest = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;   
+            var name = document.getElementById('name').value;
+            var stringHelper = '';
+            if(emailtest.test(email) === false){
+                stringHelper += 'email';
+                $('#email').parent().addClass('has-error');
+            }else{
+                $('#email').parent().removeClass('has-error');
+            }
+            if(name.replace(/^\s+/g, '').length === 0){
+                stringHelper += 'name';
+                $('#name').parent().addClass('has-error');
+            }else{
+                $('#name').parent().removeClass('has-error');
+            }
+
+            if(stringHelper.length > 0){
+                return false;
+            }else{
+                return true;
+            }
+        }   
+
+        function mobilevalidatecontactform(e){
+            var email = document.getElementById('emailmobile').value;
+            var emailtest = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;   
+            var name = document.getElementById('namemobile').value;
+            var stringHelper = '';
+            if(emailtest.test(email) === false){
+                stringHelper += 'email';
+                $('#emailmobile').parent().addClass('has-error');
+            }else{
+                $('#emailmobile').parent().removeClass('has-error');
+            }
+            if(name.replace(/^\s+/g, '').length === 0){
+                stringHelper += 'name';
+                $('#namemobile').parent().addClass('has-error');
+            }else{
+                $('#namemobile').parent().removeClass('has-error');
+            }
+
+            if(stringHelper.length > 0){
+                return false;
+            }else{
+                return true;
+            }
+        }         
+
+        $(document).ready( function () {
+            $('.modal-backdrop, #nav-modal, .mainnav_hamburger').click(function(){
+                if ( $('.mainnav_hamburger').hasClass("nav-open") ) {
+                    $('.mainnav_hamburger').removeClass('nav-open');
+                    $('.mainnav_br-logo > img').attr("src", "images/logo-nimbyx.png");
+                    $('.mainnav').css('background', 'rgba(255,255,255,' + 0.8 + ')');
+                }else{
+                    $('.mainnav_hamburger').addClass('nav-open');   
+                    $('.mainnav_br-logo > img').attr("src", "images/logo-nimbyx-white.png");
+                    $('.mainnav').css('background', 'rgba(255,255,255,' + 0 + ')');
+                }
+            });
+
+            var scroll_transparency = false;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() == 0) {
+                    scroll_transparency = false;
+                    // $('.mainnav').fadeTo( "fast", 1 );
+                    $('.mainnav').css('background', 'rgba(255,255,255,' + 0 + ')');
+                }else{
+                    if (scroll_transparency == false){
+                        // $('.mainnav').fadeTo( "fast", .5 );
+                        $('.mainnav').css('background', 'rgba(255,255,255,' + 0.8 + ')');
+                        scroll_transparency = true;
+                    }
+                }
+            });
+
+            $('#subscribe').on('hidden.bs.modal', function () {
+                $('.mainnav_hamburger').removeClass('nav-open');
+                $('.mainnav_br-logo > img').attr("src", "images/logo-nimbyx.png");
+                $('.mainnav').css('background', 'rgba(255,255,255,' + 0.8 + ')');
+            });  
+            $('#subscribe').on('shown.bs.modal', function () {
+                $('.mainnav').css('background', 'rgba(255,255,255,' + 0 + ')');
+            });             
+            $('#thankyou').on('hidden.bs.modal', function () {
+                $('.mainnav_hamburger').removeClass('nav-open');
+                $('.mainnav_br-logo > img').attr("src", "images/logo-nimbyx.png");
+                $('.mainnav').css('background', 'rgba(255,255,255,' + 0.8 + ')');
+            });             
+            $('#thankyou').on('shown.bs.modal', function () {
+                $('.mainnav').css('background', 'rgba(255,255,255,' + 0 + ')');
+                $('.modal').css('z-index', 9999);
+            });                 
+
+            $('#emailContact').click(function(){
+                if($('.emailContainer').is(':visible')){
+                    $('.emailContainer').hide();    
+                }else{
+                    $('.emailContainer').show();
+                }                
+            });            
+
+            $('#send-share-form').click(function(){
+                if(validatecontactform()){
+                    $.atpfrm.request(
+                    'POST',
+                    'php/share-event.php',
+                    $('#shareForm').serialize(),
+                    function () { console.log('processing');},
+                    function (retval) {
+                        console.log(retval);
+                        $('.modal').modal('hide');
+                        $('#thankyou').modal('show');
+                        $('#shareForm').hide();
+                    });
+                }else{
+                    return false;
+                }
+            });
+
+            $('#send-mobile-form').click(function(){
+                if(mobilevalidatecontactform()){
+                    $.atpfrm.request(
+                    'POST',
+                    'php/share-event.php',
+                    $('#shareMobileForm').serialize(),
+                    function () { console.log('processing');},
+                    function (retval) {
+                        console.log(retval);
+                        $('.modal').modal('hide');
+                        $('#thankyou').modal('show');
+                        $('#shareMobileForm').hide();
+                        $('.email').hide();
+                    });
+                }else{
+                    return false;
+                }
+            });        
+
+            /* send email when shared */
+            $('a[id*=share-]').on('click', function(){
+                $.atpfrm.request(
+                'POST',
+                'php/click-share-event.php',
+                'attribute='+$(this).attr('id'),
+                function () { console.log('processing');},
+                function (retval) {
+                    console.log(retval);
+                    console.log('proccessing...done');
+                    return true;
+                });
+            });    
+        });
+        </script>   
+    </body>
+</html>

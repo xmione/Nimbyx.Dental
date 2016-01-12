@@ -1,0 +1,35 @@
+﻿<html data-ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/shopstyle.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/app/controllers/TestAngularController.js"></script>
+    <script src="~/app/services/TestAngularService.js"></script>
+    <base href="@System.Configuration.ConfigurationManager.AppSettings["BaseUrlPath"].ToString()" />
+</head>
+<body>
+    <!-- _AngularLayout.cshtml -->
+    <div class="navbar-collapse collapse">
+        @*<ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Home", "Index", "Home", null, new { target = "_self" })</li>
+            <li>@Html.ActionLink("About", "About", "Home", null, new { target = "_self" })</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { target = "_self" })</li>
+        </ul>*@
+
+        <!-- angular links -->
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="testangular/index">Angular Index</a></li>
+            <li><a href="testangular/another-page">Another Page</a></li>
+            <li><a href="testangular/abcd">Invalid Link</a></li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+        @RenderBody()
+    </div>
+</body>
+</html>

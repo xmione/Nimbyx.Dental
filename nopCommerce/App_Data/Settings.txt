@@ -1,0 +1,2 @@
+DataProvider: sqlserver
+DataConnectionString: Data Source=SOL-PC\SQLEXPRESS;Initial Catalog=nopcommerce272;Integrated Security=False;Persist Security Info=False;User ID=default272;Password=6m[0SN4[bGew

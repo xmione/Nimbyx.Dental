@@ -1,0 +1,272 @@
+/* Bootstrap Modal Modification */
+.modal {
+    background-color: rgba(0, 102, 153, 0.5);
+}
+
+.modal-header {
+    padding: 40px 50px 0 0;
+    height: 60px;
+    border: none;
+}
+
+/* MENU MODAL */
+
+#menuModal .modal-content {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    margin-top: 140px;
+}
+
+#menuModal .menu_items {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#menuModal .menu_items li {
+    list-style: none;
+    font-size: 40px;
+
+}
+
+#menuModal .menu_items li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "SourceSansPro-Semibold";
+}
+
+/* MODAL SUBSCRIBE */
+#subscribe p {
+    margin: 0px;
+    padding: 0px;
+}
+
+#subscribe .modal_content_holder {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+#subscribe .modal-body {
+    padding: 15px 0 0 0;
+}
+
+#subscribe .header_holder,
+#subscribe .sub_text {
+    text-align: left;
+}
+
+#subscribe .header_holder p {
+    font-family: 'SourceSansPro-Semibold';
+    font-size: 50px;
+    color: #235c82;
+}
+
+#subscribe .header_holder p img {
+    height: 50px;
+}
+
+#subscribe .sub_text p {
+    font-family: 'SourceSansPro-Light';
+    font-size: 30px;
+    color: #1d81c4;
+}
+
+#subscribe .list_container,
+#subscribe .signup_form,
+#subscribe .footer_text {
+    padding-top: 60px;
+}
+
+#subscribe .list_container ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#subscribe .list_container li {
+    text-align: left;
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 260px;
+    line-height: 65px;
+}
+
+#subscribe .list_container li input[type=checkbox] {
+    opacity: 0;
+}
+
+#subscribe .list_container li label {
+    font-family: 'SourceSansPro-Semibold';
+    font-size: 24px;
+    color: #235c82;
+    background: url('../images/list-options-sym-off.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    display: inline;
+    padding: 0 0 0 34px;
+    line-height: 10px;
+}
+
+#subscribe .list_container li label:hover {
+    cursor: pointer;
+}
+
+#subscribe .list_container li > input[type='checkbox']:checked + label {
+    background-image: url('../images/list-options-sym-on.png');
+}
+
+#subscribe .modal-footer {
+    border: none;
+}
+
+#subscribe .footer_text {
+    text-align: center;
+    color: #006699;
+    font-size: 20px;
+    padding-bottom: 30px;
+    font-family: 'SourceSansPro-Light';
+}
+
+#subscribe .signup_form .btn_signup_group_email {
+    width: 100%;
+}
+
+/* THANK YOU MODAL */
+
+#thankyou .header_text {
+    color: #88bfe8;
+    font-size: 65px;
+    font-family: 'SourceSansPro-ExtraLight';
+    text-align: center;
+}
+
+#thankyou .header_image_holder {
+    width: 205px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+#thankyou .header_image_holder img {
+    height: 100%;
+    width: 100%;
+}
+
+#thankyou .circle-social-container {
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+
+#thankyou .result,
+#thankyou .social_reminder {
+    text-align: center;
+    max-width: 470px;
+    margin: 0 auto;
+}
+
+#thankyou .result {
+    color: #898a8c;
+    font-size: 21px;
+    font-family: 'SourceSansPro-Regular';
+    padding: 30px 0 0 0;
+}
+
+#thankyou .social_reminder {
+    color: #898a8c;
+    font-size: 18px;
+    font-family: 'SourceSansPro-Light';
+    padding: 15px 0 0 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) {
+    /* MENU MODAL */
+    #menuModal .menu_items li {
+        font-size: 35px;
+    }
+
+    #subscribe .header_holder, #subscribe .sub_text{
+        margin-left: 2em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 995px) {
+    #subscribe .modal-dialog {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #thankyou .header_image_holder {
+        width: 160px;
+    }
+
+    #thankyou .result {
+        font-size: 18px;
+    }
+
+    #thankyou .social_reminder {
+        font-size: 16px;
+    }
+}
+
+/* Between 495 and 491 */
+@media screen and (max-width: 495px) {
+    /* SUBSCRIBE */
+    #subscribe .header_holder, #subscribe .sub_text{
+        margin-left: 2em;
+    }
+
+    #subscribe .header_holder p {
+        font-size: 35px;
+    }
+
+    #subscribe .header_holder p img {
+        height: 37px;
+    }
+
+    #subscribe .sub_text p {
+        font-size: 20px;
+    }
+}
+
+/* Between 495 and 421 */
+@media screen and (max-width: 490px) {
+
+    /* SUBSCRIBE */
+    #subscribe .signup_form {
+        width: 90%;
+    }
+}
+
+/* Between 420 and 321 */
+@media screen and (max-width: 420px) {
+    /* SUBSCRIBE */
+    #subscribe .signup_form {
+        width: 335px;
+    }
+}
+
+/* Between 393 and 321 */
+@media screen and (max-width: 393px) {
+
+    /* SUBSCRIBE */
+    #subscribe .signup_form {
+        width: 267px;
+    }   
+
+    #menuModal .menu_items li {
+        font-size: 29px;
+    }
+}
+
+/* EXTRA FOR MODAL */
+@media screen and (max-width: 565px) {
+
+    /* SUBSCRIBE */
+    #subscribe .list_container li {
+        text-align: left;
+    }
+}

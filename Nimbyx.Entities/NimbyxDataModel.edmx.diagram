@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5d1b16942e1e4b1698caf2d0cb6eebd5" Name="Diagram1">
+        <EntityTypeShape EntityType="nimbyxdataModel.AclRecord" Width="1.5" PointX="17.25" PointY="53.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ActivityLog" Width="1.5" PointX="12" PointY="61" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ActivityLogType" Width="1.5" PointX="9.75" PointY="54.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Address" Width="1.5" PointX="7.5" PointY="57.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.AddressAttribute" Width="1.5" PointX="0.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.AddressAttributeValue" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Affiliate" Width="1.5" PointX="9.75" PointY="50.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.BackInStockSubscription" Width="1.5" PointX="15" PointY="61" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.BlogComment" Width="1.5" PointX="12" PointY="57" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.BlogPost" Width="1.5" PointX="9.75" PointY="68" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Campaign" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Category" Width="1.5" PointX="9.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.CategoryTemplate" Width="1.5" PointX="5.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.CheckoutAttribute" Width="1.5" PointX="10.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.CheckoutAttributeValue" Width="1.5" PointX="13" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Country" Width="1.5" PointX="3" PointY="48.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.CrossSellProduct" Width="1.5" PointX="11.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Currency" Width="1.5" PointX="13.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Customer" Width="1.5" PointX="9.75" PointY="57.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.CustomerAttribute" Width="1.5" PointX="5.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.CustomerAttributeValue" Width="1.5" PointX="8" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.CustomerRole" Width="1.5" PointX="15" PointY="56.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.DeliveryDate" Width="1.5" PointX="11.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Discount" Width="1.5" PointX="7.5" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.DiscountRequirement" Width="1.5" PointX="9.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.DiscountUsageHistory" Width="1.5" PointX="23.25" PointY="60.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Download" Width="1.5" PointX="5.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.EmailAccount" Width="1.5" PointX="2.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ExternalAuthenticationRecord" Width="1.5" PointX="12" PointY="66.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Forums_Forum" Width="1.5" PointX="15.75" PointY="43.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Forums_Group" Width="1.5" PointX="13.5" PointY="44.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Forums_Post" Width="1.5" PointX="15" PointY="64.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Forums_PrivateMessage" Width="1.5" PointX="12" PointY="73.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Forums_Subscription" Width="1.5" PointX="12" PointY="77.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Forums_Topic" Width="1.5" PointX="18" PointY="60.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.GenericAttribute" Width="1.5" PointX="13.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.GiftCard" Width="1.5" PointX="28.5" PointY="55.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.GiftCardUsageHistory" Width="1.5" PointX="26.25" PointY="61" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.GoogleProduct" Width="1.5" PointX="0.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Language" Width="1.5" PointX="7.5" PointY="68.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.LocaleStringResource" Width="1.5" PointX="9.75" PointY="73.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.LocalizedProperty" Width="1.5" PointX="9.75" PointY="76.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Log" Width="1.5" PointX="12" PointY="85.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Manufacturer" Width="1.5" PointX="9.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ManufacturerTemplate" Width="1.5" PointX="2.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.MeasureDimension" Width="1.5" PointX="14.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.MeasureWeight" Width="1.5" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.MessageTemplate" Width="1.5" PointX="15.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.News" Width="1.5" PointX="15.75" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.NewsComment" Width="1.5" PointX="18" PointY="56.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.NewsLetterSubscription" Width="1.5" PointX="15.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Order" Width="1.5" PointX="21" PointY="55.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.OrderItem" Width="1.5" PointX="26.25" PointY="54.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.OrderNote" Width="1.5" PointX="23.25" PointY="63.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.PermissionRecord" Width="1.5" PointX="12.75" PointY="49.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Picture" Width="1.5" PointX="12.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Poll" Width="1.5" PointX="13.5" PointY="89.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.PollAnswer" Width="1.5" PointX="15.75" PointY="90" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.PollVotingRecord" Width="1.5" PointX="18" PointY="65.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.PredefinedProductAttributeValue" Width="1.5" PointX="15" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Product" Width="1.5" PointX="9.75" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Product_Category_Mapping" Width="1.5" PointX="12" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Product_Manufacturer_Mapping" Width="1.5" PointX="12" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Product_Picture_Mapping" Width="1.5" PointX="15" PointY="36.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Product_ProductAttribute_Mapping" Width="1.5" PointX="15" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Product_SpecificationAttribute_Mapping" Width="1.5" PointX="18" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ProductAttribute" Width="1.5" PointX="12.75" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ProductAttributeCombination" Width="1.5" PointX="12" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ProductAttributeValue" Width="1.5" PointX="17.25" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ProductReview" Width="1.5" PointX="12" PointY="52.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ProductReviewHelpfulness" Width="1.5" PointX="14.25" PointY="53.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ProductTag" Width="1.5" PointX="12" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ProductTemplate" Width="1.5" PointX="16.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ProductWarehouseInventory" Width="1.5" PointX="15" PointY="39" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.QueuedEmail" Width="1.5" PointX="5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.RecurringPayment" Width="1.5" PointX="23.25" PointY="72.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.RecurringPaymentHistory" Width="1.5" PointX="25.5" PointY="73.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.RelatedProduct" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ReturnRequest" Width="1.5" PointX="12" PointY="113.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.RewardPointsHistory" Width="1.5" PointX="26.25" PointY="64.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ScheduleTask" Width="1.5" PointX="2.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.SearchTerm" Width="1.5" PointX="17.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Setting" Width="1.5" PointX="4.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Shipment" Width="1.5" PointX="23.25" PointY="80.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ShipmentItem" Width="1.5" PointX="25.5" PointY="80.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ShippingByWeight" Width="1.5" PointX="6.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ShippingMethod" Width="1.5" PointX="0.75" PointY="49" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.ShoppingCartItem" Width="1.5" PointX="15" PointY="68.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.SpecificationAttribute" Width="1.5" PointX="13.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.SpecificationAttributeOption" Width="1.5" PointX="15.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.StateProvince" Width="1.5" PointX="5.25" PointY="70.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Store" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.StoreMapping" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.TaxCategory" Width="1.5" PointX="17.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.TaxRate" Width="1.5" PointX="17.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.TierPrice" Width="1.5" PointX="20.25" PointY="51.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Topic" Width="1.5" PointX="17.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.TopicTemplate" Width="1.5" PointX="18.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.UrlRecord" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Vendor" Width="1.5" PointX="19.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nimbyxdataModel.Warehouse" Width="1.5" PointX="12.75" PointY="13.125" IsExpanded="true" />
+        <AssociationConnector Association="nimbyxdataModel.AclRecord_CustomerRole" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ActivityLog_ActivityLogType" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ActivityLog_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Address_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Address_StateProvince" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Affiliate_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Customer_BillingAddress" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Customer_ShippingAddress" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Order_BillingAddress" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Order_ShippingAddress" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.AddressAttributeValue_AddressAttribute" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.BackInStockSubscription_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.BackInStockSubscription_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.BlogComment_BlogPost" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.BlogComment_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.BlogPost_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductCategory_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.CheckoutAttributeValue_CheckoutAttribute" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.StateProvince_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ExternalAuthenticationRecord_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ForumPost_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ForumSubscription_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ForumTopic_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Log_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.NewsComment_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.PollVotingRecord_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.PrivateMessage_FromCustomer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.PrivateMessage_ToCustomer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductReview_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ReturnRequest_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.RewardPointsHistory_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ShoppingCartItem_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.CustomerAttributeValue_CustomerAttribute" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.TierPrice_CustomerRole" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Discount_DiscountRequirements" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.DiscountUsageHistory_Discount" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.DiscountUsageHistory_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.QueuedEmail_EmailAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Forum_ForumGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ForumTopic_Forum" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ForumPost_ForumTopic" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.GiftCard_PurchasedWithOrderItem" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.GiftCardUsageHistory_GiftCard" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.GiftCardUsageHistory_UsedWithOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.LocaleStringResource_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.LocalizedProperty_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.NewsItem_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Poll_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductManufacturer_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.NewsComment_NewsItem" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.OrderItem_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.OrderNote_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.RecurringPayment_InitialOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.RewardPointsHistory_UsedWithOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Shipment_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.OrderItem_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductPicture_Picture" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.PollAnswer_Poll" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.PollVotingRecord_PollAnswer" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.PredefinedProductAttributeValue_ProductAttribute" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductAttributeCombination_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductAttributeMapping_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductCategory_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductManufacturer_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductPicture_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductReview_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductSpecificationAttribute_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductWarehouseInventory_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ShoppingCartItem_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.TierPrice_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductAttributeMapping_ProductAttribute" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductAttributeValue_ProductAttributeMapping" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductSpecificationAttribute_SpecificationAttributeOption" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductReviewHelpfulness_ProductReview" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ProductWarehouseInventory_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.RecurringPaymentHistory_RecurringPayment" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ShipmentItem_Shipment" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.SpecificationAttributeOption_SpecificationAttribute" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.StoreMapping_Store" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Customer_CustomerRole_Mapping" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.CustomerAddresses" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Discount_AppliedToCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Discount_AppliedToManufacturers" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Discount_AppliedToProducts" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.PermissionRecord_Role_Mapping" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.Product_ProductTag_Mapping" ManuallyRouted="false" />
+        <AssociationConnector Association="nimbyxdataModel.ShippingMethodRestrictions" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
